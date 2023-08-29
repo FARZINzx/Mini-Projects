@@ -100,16 +100,23 @@ nav{
   position: fixed;
   bottom: 50px;
   left: 10px;
-  color: white;
   font-size: 15px;
   line-height: 20px;
   z-index: -1;
 }
 
+
+
 .nav-item {
   text-transform: uppercase;
   margin: 20px 20px;
   list-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+.ho:hover{
+  color: #333!important;
 }
 
 .nav-item i {

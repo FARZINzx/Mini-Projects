@@ -67,7 +67,23 @@ body {
   transform-origin: top left;
 }
 
+.circle.rotateBtn{
+  transform: rotate(-170deg);
+}
+
 .content {
   max-width: 100%;
   margin: 50px auto;
+}
+
+article p {
+  line-height: 20px;
+  text-align: justify;
+}
+
+article h3 {
+  display: inline-block;
+  font-weight: 700;
+  border-bottom: 1px solid #333;
+
 }

@@ -9,8 +9,6 @@ body {
   min-height: 100vh;
 }
 
-
-
 .container {
   padding: 50px 50px 50px 50px;
   min-height: 100vh;
@@ -71,7 +69,7 @@ body {
   transform-origin: top left;
 }
 
-.container.show-rotate .circle{
+.container.show-rotate .circle {
   transform: rotate(-70deg);
 }
 
@@ -92,13 +90,12 @@ article h3 {
   border-bottom: 1px solid #333;
 }
 
-.content small{
+.content small {
   color: #888;
   font-style: italic;
-
 }
 
-nav{
+nav {
   position: fixed;
   bottom: 50px;
   left: 10px;
@@ -106,8 +103,6 @@ nav{
   line-height: 20px;
   z-index: -1;
 }
-
-
 
 .nav-item {
   text-transform: uppercase;
@@ -117,8 +112,8 @@ nav{
   cursor: pointer;
 }
 
-.ho:hover{
-  color: #333!important;
+.ho:hover {
+  color: #333 !important;
 }
 
 .nav-item i {
@@ -126,15 +121,15 @@ nav{
   font-size: 20px;
 }
 
-.first-nav-item{
+.first-nav-item {
   margin-left: 15px;
 }
 
 .last-nav-item {
-  margin-left: 30px ;
+  margin-left: 30px;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .circle {
     width: 100px;
     height: 100px;
@@ -146,12 +141,37 @@ nav{
     left: -46px;
   }
 
-.circle button{
-  font-size: 20px;
-  top :20%;
-  left: 17%;
-}
-.container.show-rotate .circle{
-  transform: rotate(-100deg);
-}
+  .circle button {
+    font-size: 20px;
+    top: 20%;
+    left: 17%;
+  }
+  .circle button#close {
+    top: 8%;
+    transform: rotate(8deg);
+    transform-origin: top left;
+  }
+
+  .container.show-rotate .circle {
+    transform: rotate(-100deg);
+  }
+
+  article{
+    overflow: hidden;
+  }
+
+  article p {
+    font-size: 13px;
+  }
+
+  article p{
+    font-size: 14px;
+    text-overflow: ellipsis; /* enables ellipsis */
+    white-space: nowrap; /* keeps the text in a single line */
+    overflow: hidden; /* keeps the element from overflowing its parent */
+  }
+
+  .container.show-rotate {
+    transform: rotate(-30deg);
+  }
 }

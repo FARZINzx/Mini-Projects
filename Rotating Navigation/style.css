@@ -9,6 +9,8 @@ body {
   min-height: 100vh;
 }
 
+
+
 .container {
   padding: 50px 50px 50px 50px;
   min-height: 100vh;
@@ -130,4 +132,26 @@ nav{
 
 .last-nav-item {
   margin-left: 30px ;
+}
+
+@media screen and (max-width:500px) {
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container .closeOpen-handler {
+    position: fixed;
+    top: -36px;
+    left: -46px;
+  }
+
+.circle button{
+  font-size: 20px;
+  top :20%;
+  left: 17%;
+}
+.container.show-rotate .circle{
+  transform: rotate(-100deg);
+}
 }

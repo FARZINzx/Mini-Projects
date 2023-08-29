@@ -15,6 +15,7 @@ body {
   background-color: #fafafa;
   transform-origin: top left;
   transition: transform 0.5s linear;
+  z-index: 100;
 }
 
 .container.show-rotate {
@@ -67,8 +68,8 @@ body {
   transform-origin: top left;
 }
 
-.circle.rotateBtn{
-  transform: rotate(-170deg);
+.container.show-rotate .circle{
+  transform: rotate(-70deg);
 }
 
 .content {
@@ -79,11 +80,46 @@ body {
 article p {
   line-height: 20px;
   text-align: justify;
+  color: #333;
 }
 
 article h3 {
   display: inline-block;
   font-weight: 700;
   border-bottom: 1px solid #333;
+}
 
+.content small{
+  color: #888;
+  font-style: italic;
+
+}
+
+nav{
+  position: fixed;
+  bottom: 50px;
+  left: 10px;
+  color: white;
+  font-size: 15px;
+  line-height: 20px;
+  z-index: -1;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  margin: 20px 20px;
+  list-style: none;
+}
+
+.nav-item i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.first-nav-item{
+  margin-left: 15px;
+}
+
+.last-nav-item {
+  margin-left: 30px ;
 }

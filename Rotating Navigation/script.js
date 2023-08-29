@@ -5,7 +5,6 @@ const circle = document.querySelector(".circle")
 
 openBtn.addEventListener("click" , ()=>{
      container.classList.add("show-rotate")
-     circle.classList.add(".rorateBtn")
 })
 
 closeBtn.addEventListener("click" , ()=>{

@@ -1,82 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:ital,wght@0,300;0,400;0,700;1,600&display=swap");
 
 /* Css reset style  */
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-text-decoration: none;
-list-style:none ;
-outline: none;
-font-family: "PROMPT";
-font-weight: 400;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: "PROMPT";
+  font-weight: 400;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
 .section-1-heading {
-    font-weight: 900;
-    font-size: 8.5rem;
-    letter-spacing: .5rem;
-    text-shadow: .3rem .3rem .3rem #000;
-    color: #fff;
-    text-transform: capitalize;
+  font-weight: 900;
+  font-size: 8.5rem;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.3rem 0.3rem 0.7rem #000;
+  color:#dc3145 ;
+  text-transform: capitalize;
 }
 /*End of Css reset style  */
 
 /* Section 1*/
-.section-1{
+.section-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
   height: 100vh;
-  background-color: #333;
+  background-color: rgb(245, 245, 245);
 }
-
 
 .section-1 .section-1-icons i {
-    font-size: 20rem;
-    color: yellow;
-    position: absolute;
-    transform: translate(-50%,-50%) scale(0);
-    text-shadow: .3rem .3rem .3rem #000;
-    transition: transform .3s .3s ;
+  font-size: 20rem;
+  color: #dc3145;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+  transition: transform 0.3s 0.3s;
 }
 
-.section-1-icons i.slide-show{
-    transform:  translate(-50%,-50%) scale(1);
-    transition: transform .3s .3s ;
+.section-1-icons i.slide-show {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s 0.3s;
 }
 /* End Of Section 1*/
 
 /* Start of Section 2*/
-#section-2{
-    display: flex;
-    flex-direction: column;
-    background-color: #222;
-    width: 100%;
-    height: 100vh;
-    padding: 10rem;
-    align-items: center;
+#section-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 10rem;
+  align-items: center;
 }
 
-.card-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center ;
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card{
- margin: 5rem;
+.card {
+  margin: 5rem;
 }
 /* End of Section 2*/
-
-
-
-
-

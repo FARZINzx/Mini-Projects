@@ -1,6 +1,5 @@
 const icons = document.querySelectorAll('.section-1-icons i')
 let count = 1;
-
 setInterval(()=>{
     count++;
     const firstIcon = document.querySelector('.slide-show')

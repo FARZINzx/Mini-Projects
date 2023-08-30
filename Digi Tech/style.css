@@ -260,6 +260,7 @@ body {
   left:80%;
   background-color: rgb(199, 28, 28);
   transition: height .5s;
+  z-index: 100;
 }
 
 .gallery-link:hover::before{
@@ -290,7 +291,21 @@ body {
   .5rem .5rem .3rem #a00e1f,
   .7rem .7rem .4rem #7a131f,
   .9rem .9rem .5rem #4a0b13 ;
+  transition: all .5s;
 }
+
+.gallery-link:hover .gallery-img{
+  box-shadow: .6rem .6rem .3rem #dc3145 , 
+  .8rem .8rem .4rem #a00e1f,
+  1rem .1rem .5rem #7a131f,
+  1.1rem 1.1rem .6rem #4a0b13 ;
+  opacity: .5;
+  filter:blur(.5rem) ;
+  transform: scale(1.1);
+
+}
+
+
 
 .gallery-textBox h3{
   position: absolute;
@@ -320,7 +335,7 @@ body {
   font-size: 1.5rem;
   font-weight: 300px;
   letter-spacing: .1rem;
-  color: #dc3145;
+  color: #000;
   opacity: 0;
 }
 

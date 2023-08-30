@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  padding: 50px 50px 50px 50px;
+  padding: 50px;
   min-height: 100vh;
   max-width: 100vw;
   background-color: #fafafa;
@@ -40,6 +40,7 @@ body {
   background-color: rgb(226, 62, 62);
   opacity: 1;
   position: relative;
+  transition: transform .5s linear;
 }
 
 .circle button {
@@ -110,9 +111,16 @@ nav {
   list-style: none;
   color: white;
   cursor: pointer;
+  transform: translateX(-180%);
+  transition: transform .3s linear ;
 }
 
-.ho:hover {
+.body.nav-linear .nav-ul .nav-item{
+  transform: translateX(0);
+  transition-delay: .4s;
+}
+
+.nav-item:hover {
   color: #333 !important;
 }
 

@@ -16,8 +16,8 @@ html {
   font-size: 62.5%;
 }
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
 .section-1-heading {
@@ -25,7 +25,7 @@ body{
   font-size: 8.5rem;
   letter-spacing: 0.5rem;
   text-shadow: 0.3rem 0.3rem 0.7rem #000;
-  color:#dc3145 ;
+  color: #dc3145;
   text-transform: capitalize;
 }
 /*End of Css reset style  */
@@ -85,51 +85,144 @@ body{
   background-color: #dc3145;
   padding: 15px;
   border-radius: 20px;
-  transition: transform .7s;
+  transition: transform 0.7s;
 }
 
-.card:hover{
-    transform: translateY(-15px);
+.card:hover {
+  transform: translateY(-15px);
 }
 
-.card img{
- filter:contrast(100px);  
- border-radius:15px; 
+.card img {
+  filter: contrast(100px);
+  border-radius: 15px;
 }
 
-.card-textBox{
-    padding:10px 45px;
+.card-textBox {
+  padding: 10px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.card-name {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.card-p {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-weight: 200;
+  font-size: 12.5px;
+}
+
+.card-btn {
+  padding: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0.5em;
+  font-weight: 500;
+  font-size: 13px;
+  box-shadow: 0.3rem 0.3rem 0.7rem #000;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background: rgb(207, 203, 203);
+}
+
+@media screen and (max-width: 1400px) {
+  .card {
+    width: 45%;
+  }
+
+  .card img {
+    width: 82%;
+  }
+
+  #section-2 .section-1-heading {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 65%;
+  }
+
+  .card img {
+    width: 82%;
+  }
+
+  .card-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #section-2 .section-1-heading {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 85%;
+  }
+
+  .card img {
+    width: 90%;
+  }
+
+  .card-textBox {
+    padding: 10px 19px;
+  }
+
+  #section-2 .section-1-heading {
+    font-size: 2rem;
+    text-shadow:none;
+    
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #section-2 {
+    padding: 5rem;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card-textBox {
+    padding: 5px;
+    display: flex;
     align-items: flex-start;
-    color: #fff;
-}
+    width: 100%;
+    
+  }
 
-.card-name{
-    font-weight: 600;
-    font-size: 20px;
-    margin: 5px 0px;
-}
+  #section-2 .section-1-heading {
+    font-size: 1.3rem;
+  }
 
-.card-p{
-    font-style: italic;
-    margin-bottom: 10px;
-    font-weight: 200;
-    font-size: 12.5px;
-}
+  .card-name{
+    font-size: 15px;
+  }
 
-.card-btn{
-    padding: 10px;
-    background:#fff;
-    border: none;
-    border-radius: .5em ;
-    font-weight: 500;
-    font-size: 13px;
-    box-shadow: 0.3rem 0.3rem 0.7rem #000;
-    cursor: pointer;
-}
-
-.card-btn:hover{
-    background:rgb(207, 203, 203);
+  .card-p {
+    max-width: 280px;
+    font-size: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+  }
 }
 /* End of Section 2*/

@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Password Generator</title>
-</head>
-<body>
-     
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="section-result">
+        <span>result</span>
+        <button class="btn" id="clipbord-btn">
+          <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+      <div class="setting-section">
+          <div class="setting">
+               <label for="lenth">Password Lenth</label>
+               <input type="number" min="4" max="20" id="lenth">
+          </div>
+          <div class="setting">
+               <label for="uppercase">Include Uppercase letter</label>
+               <input type="checkbox" checked id="uppercase">
+          </div>
+          <div class="setting">
+               <label for="lowercase">Include Lowercase letter</label>
+               <input type="checkbox" checked id="lowercase">
+          </div>
+          <div class="setting">
+               <label for="Numbers">Include Numbers letter</label>
+               <input type="checkbox" checked id="Numbers">
+          </div>
+          <div class="setting">
+               <label for="symbols">Include Symbols letter</label>
+               <input type="checkbox" checked id="symbols">
+          </div>
+      </div>
+    </div>
+  </body>
 </html>

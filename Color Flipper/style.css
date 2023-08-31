@@ -49,3 +49,54 @@ body nav{
      box-shadow: var(--dark-shadow);
      height:4rem;
  }
+
+ .nav-container{
+     width: 90vm;
+     max-width: var(--fixed-width);
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     
+ }
+
+ body {
+     font-family: var(--ff-secondary);
+     background: var(--clr-grey-10);
+     color: var(--clr-grey-1);
+     line-height: 1.5;
+     font-size: 0.875rem;
+     margin: 0;
+ }
+ 
+ ul{
+     list-style-type: none;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4 {
+   letter-spacing: var(--spacing);
+   text-transform: capitalize;
+   line-height: 1.25;
+   margin-bottom: 0.75rem;
+   font-family: var(--ff-primary);
+ }
+ 
+ nav a {
+     text-transform: capitalize;
+     font-weight: 700;
+     font-size: 1rem;
+     color: var(--clr-primary-1);
+     letter-spacing: var(--spacing);
+     margin-right: 1rem;
+ }
+ 
+ nav a:hover {
+     color:red ;
+ }

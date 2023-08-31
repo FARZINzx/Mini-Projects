@@ -344,7 +344,83 @@ body {
   transition:  opacity .5s .5s;
 }
 
-
-
-
 /*End  of section 3*/
+
+/*Footer Start*/
+ 
+footer{
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  width: 100%;
+}
+
+.footer-top{
+  display: flex ;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem 1rem;
+  border-bottom: 1px solid #4b4747;
+}
+
+.footer-textBox-header{
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+  color: #dc3145;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-textBox-span{
+  color: rgb(52, 52, 52);
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.footer-form input{
+  color: #000;
+  border: 2px solid #dc3145;
+  width: 26rem;
+  height: 3rem;
+
+}
+
+.footer-form input::placeholder{
+  color: #4b4747;
+  padding: 5px;
+}
+
+.footer-form button{
+  position: relative;
+  left:-3.7rem; 
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+  background-color: #4b4747;
+  border:none;
+  border-radius: 5px;
+}
+
+.footer-form button i{
+  color: #fff;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.footer-bottom span{
+
+  color: #7a131f;
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: .1rem;
+
+
+}
+
+/*Footer End/*

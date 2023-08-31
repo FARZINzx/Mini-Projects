@@ -47,11 +47,11 @@ body nav{
      border-bottom: 10px;
      border-bottom-color: black;
      box-shadow: var(--dark-shadow);
-     height:4rem;
  }
 
  .nav-container{
-     width: 90vm;
+     padding: .5rem 0 ;
+     width: 90vw;
      max-width: var(--fixed-width);
      margin: 0 auto;
      display: flex;
@@ -71,6 +71,8 @@ body nav{
  
  ul{
      list-style-type: none;
+     display: flex;
+     justify-content: space-evenly;
  }
  
  a {
@@ -144,10 +146,10 @@ body nav{
 
    @media screen and (min-width: 800px) {
      h1 {
-       font-size: 4rem;
+       font-size: 3rem;
      }
      h2 {
-       font-size: 2.1rem;
+       font-size: 1.5rem;
      }
      h3 {
        font-size: 1.75rem;
@@ -171,5 +173,15 @@ body nav{
          width: 95vw;
        }
    }
+
+   @media screen and (max-width:450px) {
+   .nav-title{
+    font-size: .7rem !important;
+   }
+
+   #container h2 {
+    font-size: 1rem !important;
+   }
+  }
 
    /*End of Responsive part*/

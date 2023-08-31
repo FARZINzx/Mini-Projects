@@ -1,4 +1,8 @@
 const icons = document.querySelectorAll('.section-1-icons i')
+const nav = document.querySelector(".nav")
+const navIcon = document.querySelector(".nav-icon")
+
+
 let count = 1;
 setInterval(()=>{
     count++;
@@ -11,3 +15,9 @@ setInterval(()=>{
         firstIcon.nextElementSibling.classList.add("slide-show")
     }
 },1000)
+
+navIcon.addEventListener('click' , ()=>{
+    document.querySelectorAll(".target").forEach((item)=>{
+        item.classList.toggle('change')
+    })
+})

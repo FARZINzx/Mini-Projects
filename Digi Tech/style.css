@@ -30,6 +30,113 @@ body {
 }
 /*End of Css reset style  */
 
+/*Navbar start*/
+
+nav{
+  width: 100%;
+  height: 14rem;
+  background-color: #000;
+  position: fixed;
+  top: -13rem;
+  z-index: 100;
+  box-shadow: .2rem .2rem .2rem #000;
+  transition: top .6s;
+}
+
+.nav.change{
+  top:0 !important ;
+}
+
+nav .nav-ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+nav .nav-ul li {
+  margin-right: 5rem;
+  font-size: 3rem;
+ 
+}
+
+.nav .nav-ul li a {
+ opacity: 0;
+}
+
+.nav.change .nav-ul a{
+ opacity: 1;
+}
+
+.nav.change .nav-ul:nth-child(1) a {
+  transition: opacity .4s .5s;
+}
+
+.nav.change .nav-ul:nth-child(2) a{
+  transition: opacity .4s .7s;
+}
+
+.nav.change .nav-ul:nth-child(3) a{
+  transition: opacity .4s .7s;
+}
+
+.nav.change .nav-ul:nth-child(4) a{
+  transition: opacity .4s .8s;
+}
+
+.nav.change .nav-ul:nth-child(5) a{
+  transition: opacity .4s .9s;
+}
+
+
+.nav-ul li a{
+  color: #b03b49;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: color .4s;
+}
+
+.nav-ul li a:hover{
+ color: #dc3145;
+}
+
+.nav-ul li a i {
+  margin-right :10px;
+}
+
+.nav-icon{
+  width: 4rem;
+  height: 6rem;
+  background-color: #000;
+  position: fixed;
+  z-index: 100;
+  top:20px;
+  left: 5rem;
+  border-radius: 30rem 30rem 15rem 15rem;
+  box-shadow: .1rem .1rem .1rem #000 , -.1rem -.1rem .1rem #000 ;
+  cursor: pointer;
+  box-shadow: .1rem .1rem #000;
+  transition: top .5s;
+}
+
+.nav-icon.change{
+  top: 15rem;
+}
+
+.nav-icon::before{
+  content:'';
+  width: .4rem;
+  height: 8rem;
+  position: absolute;
+  top: -5rem;
+  left: 47%;
+  background-color: #000;
+}
+
+/*Navbar end*/
+
 /* Section 1*/
 .section-1 {
   display: flex;

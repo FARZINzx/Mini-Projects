@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Prompt:ital,wght@0,300;0,400;0,700;1,600&family=Rubik&display=swap");
+
+:root{
+     --primary-color : #22254b;
+     --secondry-header-color : #373b69;
+}
+
+body{
+     font-family: "Rubik", sans-serif;
+     margin: 0;
+     background-color: var(--primary-color);
+}
+
+header{
+     background-color: var(--secondry-header-color);
+     display: flex;
+     justify-content: flex-end;
+     padding: 1rem;
+}
+
+.search-bar{
+     background-color: transparent;
+     border: none;
+     padding: .5rem 1rem;
+     font-size: 1rem;
+     border-radius: 50px;
+     color: white;
+     border: 2px solid var(--primary-color);
+     position: relative;
+}
+
+.search-bar::placeholder{
+     color: #fff;
+}
+
+.search-bar:focus{
+     background-color: var(--primary-color);
+}
+
+.icon-search{
+     position: absolute;
+     right: 1.7rem;
+     top: 1.7rem;
+     color: #fff;
+     cursor: pointer;
+}
+

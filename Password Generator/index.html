@@ -18,7 +18,7 @@
     <div class="container">
       <h2>Password Generator</h2>
       <div class="section-result">
-        <span>result</span>
+        <span id="result-span">result</span>
         <button class="btn" id="clipbord-btn">
           <i class="far fa-clipboard"></i>
         </button>
@@ -37,8 +37,8 @@
         <div class="setting">
           <label for="uppercase">Include Uppercase letter</label>
           <label class="checkmark">
-            <input type="checkbox" />
-            <svg viewBox="0 0 64 64" height="2em" width="2em">
+            <input type="checkbox" id="uppercase" />
+            <svg viewBox="0 0 64 64" height="1em" width="1em">
               <path
                 d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
                 pathLength="575.0541381835938"
@@ -50,8 +50,8 @@
         <div class="setting">
           <label for="lowercase">Include Lowercase letter</label>
           <label class="checkmark">
-            <input type="checkbox" />
-            <svg viewBox="0 0 64 64" height="2em" width="2em">
+            <input type="checkbox" id="lowercase" />
+            <svg viewBox="0 0 64 64" height="1em" width="1em">
               <path
                 d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
                 pathLength="575.0541381835938"
@@ -63,8 +63,8 @@
         <div class="setting">
           <label for="Numbers">Include Numbers letter</label>
           <label class="checkmark">
-            <input type="checkbox" />
-            <svg viewBox="0 0 64 64" height="2em" width="2em">
+            <input type="checkbox" id="Numbers" />
+            <svg viewBox="0 0 64 64" height="1em" width="1em">
               <path
                 d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
                 pathLength="575.0541381835938"
@@ -76,8 +76,8 @@
         <div class="setting">
           <label for="symbols">Include Symbols letter</label>
           <label class="checkmark">
-            <input type="checkbox" />
-            <svg viewBox="0 0 64 64" height="2em" width="2em">
+            <input type="checkbox" id="symbols" />
+            <svg viewBox="0 0 64 64" height="1em" width="1em">
               <path
                 d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
                 pathLength="575.0541381835938"
@@ -87,6 +87,8 @@
           </label>
         </div>
       </div>
+      <button id="generate-pass">Generate Password</button>
+      <p>Lorem ipsum dolor sit  molestias necessitatibus perferendis labore, alias fuga autem, iste voluptatum aliquid explicabo non quo hic sapiente ducimus quam laborum ipsa voluptate officiis enim doloremque magnam animi! Maxime ipsam veritatis delectus excepturi adipisci est? Provident minima deleniti sed alias repudiandae architecto fugiat. Nihil pariatur voluptate aliquid ut perspiciatis praesentium eum iure veritatis officiis repudiandae corrupti, aliquam, incidunt, suscipit atque. Deleniti exercitationem nisi libero id cumqlicabo voluptatum laudantium.</p>
     </div>
     <script src="./script.js"></script>
   </body>

@@ -87,10 +87,14 @@ clipBoardBtn.addEventListener("click" , ()=>{
 
   if(!password){
     alert("No message to clipboard")
+  }else{
+    navigator.clipboard.writeText(password)
+    alert('Password copied to clipboard!')
   }
 
-  navigator.clipboard.writeText(password)
-  
-  alert('Password copied to clipboard!')
+ 
 })
+
+
+
 

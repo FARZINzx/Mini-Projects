@@ -56,6 +56,7 @@ h2{
      border-radius: 5px;
      cursor: pointer;
      transition: transform .5s;
+     color: #fff;
 }
 
 #clipbord-btn:hover{
@@ -64,8 +65,7 @@ h2{
 }
 
 #clipbord-btn i{
-     background-color: #fff;
-     font-size: 30px;
+     font-size: 25px;
 }
 
 .setting-section{
@@ -137,5 +137,27 @@ h2{
      background-color:#3e3ebc ;
      transform: scale(.99);
    }
+
+   @media screen and (max-width:500px) {
+     h2{
+          font-size: 17px;
+     }
+
+     #clipbord-btn {
+          height: 85%;
+          width:40px;
+     }
+
+     .setting {
+          font-size: 12px;
+     }
+
+     .btn-pass{
+          padding: 9px 0px;
+          font-size: 13px;
+          font-weight: 500;
+        }
+   }
+
 
    

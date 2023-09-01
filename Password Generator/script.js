@@ -42,12 +42,12 @@ function getSymbols() {
 const randFunc = {
   lower: getRandomLowercase,
   upper: getRandomUppercase,
-  symbols: getSymbols,
+  symbol: getSymbols,
   number: getRandomNumber,
 };
 
 btnGenerator.addEventListener("click", () => {
-  let hasLenth = +lengthTag.value;
+  let hasLenth = lengthTag.value;
   let hasUpper =  uppercaseTag.checked;
   let haslower =  lowercaseTag.checked;
   let hasnumber = NumbersTag.checked;
@@ -61,10 +61,22 @@ const generatePassWord = (lenth , upper , lower , number , symbol) => {
      let generatedPassword = " "
      const typeChecked = lower + upper + number + symbol
      const typesArr = [{lower} , {upper} , {number} , {symbol}].filter(item=>Object.values(item)[0])
-     console.log(typesArr)
 
-     if(typesArr === 0){
-          return ''; 
+
+     if(typeChecked === 0){
+          return 'Please Select an least a type'; 
      }
+
+     for(let i = 0 ; i < lenth ; i+= typeChecked){
+      typesArr.forEach(type =>{
+        const checkName = Object.keys(type)[0]
+        console.log(checkName)
+        generatedPassword += randFunc[checkName]()
+      })
+     }
+
+     const finalResult = generatedPassword.slice(0 , lenth+1)
+
+     return finalResult
 }
 

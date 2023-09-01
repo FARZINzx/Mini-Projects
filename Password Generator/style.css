@@ -88,6 +88,7 @@ h2{
      width: 30px;
      background-color: #4545b4;
      border: none;
+     color: #fff;
 }
 
 .checkmark {
@@ -117,4 +118,24 @@ h2{
      stroke-dasharray: 70.5096664428711 9999999;
      stroke-dashoffset: -262.2723388671875;
    }
+
+   .btn-pass{
+     width: 100%;
+     padding: 13px 0px;
+     border-radius: 10px !important ;
+     background:#4545B4;
+     border: none;
+     font-size: 15px;
+     color: white;
+     text-shadow:.1rem .1rem 1rem rgba(0, 0, 0, .6);
+     box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, .4);
+     transition: all .3s;
+     cursor: pointer;
+   }
+
+   .btn-pass:hover{
+     background-color:#3e3ebc ;
+     transform: scale(.99);
+   }
+
    

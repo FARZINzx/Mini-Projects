@@ -79,4 +79,26 @@ main{
      display: flex;
      justify-content: space-between;
      margin: 10px 20px;
+     color: #fff;
 }
+
+.movie-score{
+     background-color:var(--primary-color) ;
+     border-radius: 3px;
+     padding: 3px;
+     font-weight: bold;
+}
+
+.movie-score.green{
+     color: lightgreen;
+}
+
+.movie-score.red{
+     color: red;
+}
+
+.movie-score.orenge{
+     color: orange;
+}
+
+

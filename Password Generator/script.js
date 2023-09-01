@@ -5,6 +5,7 @@ const lowercaseTag = document.getElementById("lowercase");
 const NumbersTag = document.getElementById("Numbers");
 const symbolsTag = document.getElementById("symbols");
 const resultTag = document.getElementById("result-span");
+const clipBoardBtn = document.getElementById("clipbord-btn")
 
 function getRandomLowercase() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
@@ -79,4 +80,17 @@ const generatePassWord = (lenth , upper , lower , number , symbol) => {
 
      return finalResult
 }
+
+clipBoardBtn.addEventListener("click" , ()=>{
+  const textArea = document.createElement('textarea')
+  const password = resultTag.innerText
+
+  if(!password){
+    alert("No message to clipboard")
+  }
+
+  navigator.clipboard.writeText(password)
+  
+  alert('Password copied to clipboard!')
+})
 

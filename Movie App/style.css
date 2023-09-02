@@ -71,6 +71,10 @@ main{
 
 }
 
+.movie-img{
+     width: 100%;
+}
+
 .movie-img img {
      width: 100%;
 }

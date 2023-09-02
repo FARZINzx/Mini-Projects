@@ -23,6 +23,7 @@ header h1{
      color: #fff;
      font-size: 1.7rem;
      cursor: pointer;
+     margin-left: 2rem;
 }
 
 .search-bar{
@@ -58,7 +59,10 @@ header h1{
 main{
      display: flex;
      flex-wrap: wrap;
-     margin: 0 auto;
+     justify-content: space-around;
+     margin: auto;
+     width: 100%;
+
 }
 
 .movie-container{
@@ -101,7 +105,7 @@ main{
      color: red;
 }
 
-.movie-score.orenge{
+.movie-score.orange{
      color: orange;
 }
 
@@ -121,5 +125,33 @@ main{
 
 .movie-container:hover .overview{
      display: block;
+}
+
+/*Responsive part*/
+
+@media screen and (max-width:500px) {
+     header h1 {
+          font-size: 1rem;
+     }
+
+     .search-bar{
+          padding: .3rem .2rem;
+          margin-left: .5rem;
+          width: 35vw;
+     }
+
+     .search-bar::placeholder{
+          font-size: 12px;
+          padding: 0 .4rem;
+     }
+
+     .icon-search{
+          position: absolute;
+          right: 1.7rem;
+          top: 1.9rem;
+          color: #fff;
+          cursor: pointer;
+          font-size:12px;
+     }
 }
 

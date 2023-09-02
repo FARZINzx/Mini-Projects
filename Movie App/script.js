@@ -67,7 +67,7 @@ function showMovieHtml(movies) {
         </div>
         <div class="movie-detail">
           <span class="movie-name">${title}</span>
-          <span class="movie-score">${vote_average}</span>
+          <span class="movie-score ${voteRateColor(vote_average)}">${vote_average}</span>
         </div>
         <div class="overview">
           <h3>overview</h3>
@@ -76,4 +76,15 @@ function showMovieHtml(movies) {
     `;
     main.appendChild(movieContainer);
   });
+}
+
+
+function voteRateColor(vote){
+  if(vote >8){
+    return "green"
+  }else if(vote >5){
+    return "orange"
+  }else{
+    return "red"
+  }
 }

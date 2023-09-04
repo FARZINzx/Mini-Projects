@@ -32,3 +32,76 @@ const quizData = [
          correct: "b",
      },
  ];
+
+ const quizContainer = document.getElementsByClassName("container")
+ const quizQuestion = document.getElementById("question")
+ const quizMain = document.getElementById(".quiz-main")
+const answerTag = document.querySelectorAll(".answer")
+const a_answer = document.getElementById("a-text")
+const b_answer = document.getElementById("b-text")
+const c_answer = document.getElementById("c-text")
+const d_answer = document.getElementById("d-text")
+const submitBtn = document.getElementById("submit")
+
+console.log(answerTag)
+
+let currentQuiz = 0 // star in 0
+let score = 0
+
+startQuiz()
+
+function startQuiz(){
+
+     untiSelected()
+     // show first question
+     let currentQuizQuestion = quizData[currentQuiz]
+
+     quizQuestion.innerText = currentQuizQuestion.question
+     a_answer.innerText = currentQuizQuestion.a
+     b_answer.innerText = currentQuizQuestion.b
+     c_answer.innerText = currentQuizQuestion.c
+     d_answer.innerText = currentQuizQuestion.d    
+}
+
+function untiSelected(){
+     answerTag.forEach((item) => item.checked = false)
+}
+
+function getUserAnswer(){
+     let UA;
+     answerTag.forEach(item =>{
+          if(item.checked){
+               UA = item.id
+          }
+     })
+     return UA
+}
+
+submitBtn.addEventListener('click' , ()=>{
+     const userAnswer = getUserAnswer()
+     console.log(currentQuiz)
+     currentQuiz++;
+     console.log(currentQuiz)
+     isTrue(userAnswer);
+     startQuiz()
+     finishQuiz()
+})
+
+function isTrue(userAnswer){
+     // check the correctness of answere and increase or decrease score
+     if(userAnswer == quizData[currentQuiz].correct ){
+          score++;
+     }
+}
+
+function finishQuiz(){
+     if(score == quizData.length){
+          quizMain.innerHTML = `
+            <span>
+             You get ${score}/${quizData.length}
+            </span>
+          `
+     }
+}
+
+

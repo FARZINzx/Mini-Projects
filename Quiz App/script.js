@@ -79,15 +79,15 @@ function getUserAnswer(){
 
 submitBtn.addEventListener('click' , ()=>{
      const userAnswer = getUserAnswer()
-     console.log(currentQuiz)
      currentQuiz++;
-     console.log(currentQuiz)
      isTrue(userAnswer);
      startQuiz()
-     finishQuiz()
+     console.log("score"+score)
 })
 
 function isTrue(userAnswer){
+     console.log(userAnswer)
+     console.log( quizData[currentQuiz].correct)
      // check the correctness of answere and increase or decrease score
      if(userAnswer == quizData[currentQuiz].correct ){
           score++;
